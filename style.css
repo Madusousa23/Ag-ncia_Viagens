@@ -1,0 +1,360 @@
+
+/*  .cabeca1 .Categorias .opcoes .busca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores do site */
+    --cor1:#074073;
+    --cor2:#F2B705;
+    --cor3:#F2A71B;
+    --cor4:#F27405;
+    --cor5:#F2F2F2;
+
+    /* Fontes e tamanhos */
+    --fontsite:'Montserrat',Arial,sans-serif;
+    --font-size-padrao: 1rem;
+    --font-size-pequeno: 1.2rem;
+    --font-size-medio: 1.5rem;
+    --font-size-grande: 2rem;
+    --cor-branca: var(--cor5);
+    --cor-preta: #000000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: var(--fontsite);
+    
+}
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        /* background-color: var(--cor5); */
+        overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+body a{
+    color:var(--cor-preta);
+
+}
+/* Estilização da Header */
+.cabeca1{
+    /* background-color: var(--cor1); */
+    padding: 10px 30px;
+    color: #000000;
+}
+
+
+/* Estilização do corpo e conteudo */
+.container{
+    max-width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.conteudo{
+    /* main/largura do site  */
+    background-color:var(--cor5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+/* PadraoS = Configuração padrão para a section */
+.PadraoS{
+    width:100%;
+    margin: 20px;
+    padding-left: 8%;
+    /* background-color: #000000; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logof{
+    width: 80px;
+}
+.footer-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    
+}
+.footer-section h4 {
+    width: 100%; 
+    text-align: left; 
+    margin: 0 0 8px 0; 
+    color: var(--cor5); 
+    font-size: 1.1rem;
+}
+.footer-links{
+    padding-top: 9px;
+}
+.footer-links:hover{
+    text-decoration: underline;
+} */
+
+
+/*  .cabeca1 .Categorias .opcoes .busca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: var(--fontsite);
+    
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor5);
+    overflow-x: hidden;
+}
+body a{
+    color:var(--cor5) ;
+}
+
+
+
+
+.banner-sobreposto {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    
+    position: relative;
+    top: -50px; /* Essa linha faz ele "subir" sobre o banner */
+}
+
+.item {
+    text-align: center;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c2340; /* fundo caso a imagem não cubra 100% */
+  padding: 0;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que a imagem preencha a área sem distorcer */
+  display: block;
+}
+
+  /* produtos */
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+  }
+  
+  .produto-card {
+    background: white;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: 0.3s;
+  }
+  .produto-card:hover{
+    transform: scale(1.05);
+  }
+  
+  .produto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .produto-card h2 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+  }
+  
+  .promocao {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .produto-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 15px 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .produto-card ul li {
+    margin-bottom: 5px;
+  }
+  
+  .preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .btn-roxo, .btn-azul, .btn-verde {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  .btn-azul {
+    background-color: #3498db;
+    align-items: baseline;
+  }
+  
+  
+  .btn-roxo:hover,
+  .btn-azul:hover,
+  .btn-verde:hover {
+    opacity: 0.9;
+  }
+
+  /* icones */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Espaçamento entre as imagens */
+  }
+
+  .social-icons a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+  }
+
+  .social-icons img {
+    width: 25px; /* Tamanho da imagem */
+    height: 25px; /* Tamanho da imagem */
+    transition: transform 0.3s ease; /* Transição para o efeito de transformação */
+    margin: 10px 0px 10px 0px;
+  }
+
+  /* estilização footer */
+ 
+  
+  .footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-about,
+  .footer-social {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px 20px;
+  }
+  
+  .footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .footer p {
+    line-height: 1.6;
+    color: #d0d0d0;
+  }
+  
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+  }
+  
+  .linkedin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+  }
+  
+  .whatsapp {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733585.png');
+  }
+  
+  
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .icons img {
+    width: 30px;
+    height: 30px;
+    /* filter: invert(1); Deixa o ícone branco, para combinar com o fundo escuro */
+  }
+  
+  .divider {
+    width: 2px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+  }
+
